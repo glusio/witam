@@ -56,6 +56,118 @@ function App() {
       yt: 'https://www.youtube.com/embed/HaQe5QqMoQw?rel=0&controls=0',
       controls: [{ setting: 'ok-wracajmy', text: 'Ok, wracajmy' }],
     },
+    'ok-wracajmy': {
+      yt: 'https://www.youtube.com/embed/RfKdWHLHoTU?rel=0&controls=0',
+      controls: [{ setting: 'ale-to-nie-koniec', text: 'Ale to nie koniec!' }],
+    },
+    'na-plaze': {
+      yt: 'https://www.youtube.com/embed/iMxi7vF4sgY?rel=0&controls=0',
+      controls: [
+        { setting: 'pobawmy-sie', text: 'Pobawmy się' },
+        { setting: 'na-wybieg', text: 'Na wybieg, bo pusty' },
+      ],
+    },
+    'pobawmy-sie': {
+      yt: 'https://www.youtube.com/embed/pQp5GZGVAIo?rel=0&controls=0',
+      controls: [
+        { setting: 'na-pizze', text: 'Chodźmy na pizze' },
+        { setting: 'gryzaka', text: 'Kup mi gryzaka' },
+      ],
+    },
+    'na-wybieg': {
+      yt: 'https://www.youtube.com/embed/NoxzJqjH3-s?rel=0&controls=0',
+      controls: [
+        { setting: 'pocwiczmy', text: 'Poćwiczmy' },
+        { setting: 'gryzaka', text: 'Kup mi gryzaka' },
+      ],
+    },
+    gryzaka: {
+      yt: 'https://www.youtube.com/embed/wroCQgrBwOQ?rel=0&controls=0',
+      controls: [{ setting: 'ok-wracajmy', text: 'Ok, wracajmy' }],
+    },
+    'na-pizze': {
+      yt: 'https://www.youtube.com/embed/3qUMPFdInpY?rel=0&controls=0',
+      controls: [{ setting: 'ok-wracajmy', text: 'Ok, wracajmy' }],
+    },
+    pocwiczmy: {
+      yt: 'https://www.youtube.com/embed/CcJLgEjriK8?rel=0&controls=0',
+      controls: [{ setting: 'ok-wracajmy', text: 'Ok, wracajmy' }],
+    },
+    'ale-to-nie-koniec': {
+      yt: 'https://www.youtube.com/embed/btXneBMNJbI?rel=0&controls=0',
+      controls: [
+        { setting: 'obiad', text: 'Czas na obiad' },
+        { setting: 'sztuczki', text: 'A może sztuczki' },
+      ],
+    },
+    obiad: {
+      yt: 'https://www.youtube.com/embed/Su_BNJ9nRUk?rel=0&controls=0',
+      controls: [
+        { setting: 'sprzatanie', text: 'Sprzątanie' },
+        { setting: 'zabawa-rybka', text: 'Zabawa z rybką' },
+      ],
+    },
+    sztuczki: {
+      yt: 'https://www.youtube.com/embed/CIyfAYBsdzk?rel=0&controls=0',
+      controls: [
+        { setting: 'mizianie', text: 'Mizianie' },
+        { setting: 'zabawa-stary', text: 'Zabawa ze starym' },
+      ],
+    },
+    sprzatanie: {
+      yt: 'https://www.youtube.com/embed/CS1ZJFEwK4s?rel=0&controls=0',
+      controls: [
+        { setting: 'troche-magii', text: 'Trochę magii' },
+        { setting: 'serial', text: 'Czas na serial' },
+      ],
+    },
+    'zabawa-rybka': {
+      yt: 'https://www.youtube.com/embed/ua3Anjl0zfI?rel=0&controls=0',
+      controls: [
+        { setting: 'troche-magii', text: 'Trochę magii' },
+        { setting: 'serial', text: 'Czas na serial' },
+      ],
+    },
+    mizianie: {
+      yt: 'https://www.youtube.com/embed/GVz_6g03g2Y?rel=0&controls=0',
+      controls: [
+        { setting: 'obiad', text: 'Czas na obiad' },
+        { setting: 'serial', text: 'Czas na serial' },
+      ],
+    },
+    'zabawa-stary': {
+      yt: 'https://www.youtube.com/embed/QFkCZEIzxXg?rel=0&controls=0',
+      controls: [
+        { setting: 'obiad', text: 'Czas na obiad' },
+        { setting: 'serial', text: 'Czas na serial' },
+      ],
+    },
+    'troche-magii': {
+      yt: 'https://www.youtube.com/embed/dCjqjanSAu0?rel=0&controls=0',
+      controls: [
+        { setting: 'szocik', text: 'Szocik na zdrowie' },
+        { setting: 'spanko', text: 'Czas na spanko' },
+      ],
+    },
+    serial: {
+      yt: 'https://www.youtube.com/embed/aOkipifTd_Y?rel=0&controls=0',
+      controls: [
+        { setting: 'szocik', text: 'Szocik na zdrowie' },
+        { setting: 'spanko', text: 'Czas na spanko' },
+      ],
+    },
+    szocik: {
+      yt: 'https://www.youtube.com/embed/fc4_tXBCBqM?rel=0&controls=0',
+      controls: [{ setting: 'poscielmy', text: 'Pościelmy!' }],
+    },
+    spanko: {
+      yt: 'https://www.youtube.com/embed/xryDdE_oGiU?rel=0&controls=0',
+      controls: [{ setting: 'poscielmy', text: 'Pościelmy jeszcze raz' }],
+    },
+    poscielmy: {
+      yt: 'https://www.youtube.com/embed/WSA09FMD68w?rel=0&controls=0',
+      controls: [{ setting: 'outro', text: 'No co?' }],
+    },
   };
   const [setting, setSetting] = useState(availableSettings['intro']);
   const [areControlsVisible, setAreControlsVisible] = useState(true);
@@ -76,8 +188,7 @@ function App() {
           <>
             <div>Cieszę się, że dorzuciłeś się do mojej skarbonki!</div>
             <img src={glusio} alt="Gluten"></img>
-            <div>Włącz dźwięk,</div>
-            <div>po chwili pod każdym filmikiem zobaczysz przyciski.</div>
+            <div>Włącz dźwięk, po chwili pod każdym filmikiem zobaczysz przyciski.</div>
             <div>Wybieraj, co robimy dalej!</div>
             <span>P.S. Najlepiej przeglądać na telefonie :)</span>
           </>
@@ -85,7 +196,16 @@ function App() {
       case 'outro':
         return (
           <>
-            <div>To już koniec!</div>
+            <div>Jeśli Ci się podobało to daj znać innym o mojej zbiórce.</div>
+            <img src={glusio} alt="Gluten"></img>
+            <div>Więcej mojego codziennego życia na instagramie!</div>
+            <Button variant="contained" href="https://www.instagram.com/gluten_z_biszkopta/">
+              Instagram
+            </Button>
+            <div>Pamiętaj, możesz też wylicytować spacer ze mną w offline</div>
+            <Button variant="contained" href="https://allegro.pl/oferta/11731520853">
+              Spacerek
+            </Button>
           </>
         );
       default:

@@ -1,4 +1,5 @@
 body {
+  min-height: 100%;
   background-color: #4fbace;
 }
 
@@ -26,6 +27,7 @@ body {
 .text {
   color: #fff;
   margin-bottom: 10px;
+  padding: 0 10px;
 }
 
 .text div {
@@ -33,4 +35,8 @@ body {
   color: #fff;
   font-size: 26px;
   margin-bottom: 10px;
+}
+
+.text a {
+  margin-bottom: 20px;
 }
