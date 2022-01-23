@@ -1,5 +1,5 @@
 {
-  "name": "gluteo",
+  "name": "witam",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -41,5 +41,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://v01d3tr.github.io/gluteo"
+  "homepage": "https://glusio.github.io/witam"
 }

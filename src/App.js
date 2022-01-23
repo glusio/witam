@@ -1,11 +1,19 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import { Button, Container, Box } from '@mui/material';
+import glusio from './glusio.png';
 
 function App() {
   const availableSettings = {
+    intro: {
+      text: 'intro',
+      controls: [{ setting: 'start', text: 'Zaczynajmy!' }],
+    },
+    outro: {
+      text: 'outro',
+    },
     start: {
-      yt: 'https://www.youtube.com/embed/neTU0VjL__c?rel=0&controls=0',
+      yt: 'https://www.youtube.com/embed/PPIaF7p7t8o?rel=0&controls=0',
       controls: [
         { setting: 'na-plaze', text: 'Na plażę' },
         { setting: 'do-parku', text: 'Do parku' },
@@ -49,31 +57,61 @@ function App() {
       controls: [{ setting: 'ok-wracajmy', text: 'Ok, wracajmy' }],
     },
   };
-  const [setting, setSetting] = useState(availableSettings['start']);
-  const [areControlsVisible, setAreControlsVisible] = useState();
+  const [setting, setSetting] = useState(availableSettings['intro']);
+  const [areControlsVisible, setAreControlsVisible] = useState(true);
 
   useEffect(() => {
-    setAreControlsVisible(false);
-    setTimeout(() => setAreControlsVisible(true), 5000);
+    const delayControlsVisibility = () => {
+      setAreControlsVisible(false);
+      setTimeout(() => setAreControlsVisible(true), 5000);
+    };
+
+    setting.yt && delayControlsVisibility();
   }, [setting]);
+
+  const renderText = (setting) => {
+    switch (setting) {
+      case 'intro':
+        return (
+          <>
+            <div>Cieszę się, że dorzuciłeś się do mojej skarbonki!</div>
+            <img src={glusio} alt="Gluten"></img>
+            <div>Włącz dźwięk,</div>
+            <div>po chwili pod każdym filmikiem zobaczysz przyciski.</div>
+            <div>Wybieraj, co robimy dalej!</div>
+            <span>P.S. Najlepiej przeglądać na telefonie :)</span>
+          </>
+        );
+      case 'outro':
+        return (
+          <>
+            <div>To już koniec!</div>
+          </>
+        );
+      default:
+        return areControlsVisible && <div>To co teraz?</div>;
+    }
+  };
 
   return (
     <div className="App">
-      <Container className="video-iframe">
-        <iframe
-          title="Gluteo"
-          width="330"
-          height="590"
-          src={setting['yt']}
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        ></iframe>
-      </Container>
+      {setting.yt && (
+        <Container className="video-iframe">
+          <iframe
+            title="Gluteo"
+            width="330"
+            height="590"
+            src={setting['yt']}
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          ></iframe>
+        </Container>
+      )}
+      <Box className="text">{renderText(setting.text)}</Box>
       {setting.controls && areControlsVisible && (
-        <Box sx={{ '& button': { m: 1 } }}>
-          <div className="cta">To co teraz?</div>
+        <Box sx={{ '& button': { m: 1 } }} className="cta">
           {setting.controls.map((control) => (
-            <div>
+            <div key={control.setting}>
               <Button variant="contained" onClick={() => setSetting(availableSettings[control.setting])}>
                 {control.text}
               </Button>

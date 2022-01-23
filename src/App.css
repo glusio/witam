@@ -20,8 +20,17 @@ body {
 }
 
 .cta {
+  margin-bottom: 40px;
+}
+
+.text {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.text div {
   font-family: 'Aleo', peachy-keen-jf, sans-serif;
   color: #fff;
   font-size: 26px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
