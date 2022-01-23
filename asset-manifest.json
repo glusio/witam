@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/gluteo/static/css/main.f78ba5a7.css",
-    "main.js": "/gluteo/static/js/main.647f27e1.js",
-    "static/js/787.84842bf5.chunk.js": "/gluteo/static/js/787.84842bf5.chunk.js",
-    "static/media/glusio.png": "/gluteo/static/media/glusio.1a0194d27095fd4a8dc8.png",
-    "index.html": "/gluteo/index.html",
-    "main.f78ba5a7.css.map": "/gluteo/static/css/main.f78ba5a7.css.map",
-    "main.647f27e1.js.map": "/gluteo/static/js/main.647f27e1.js.map",
-    "787.84842bf5.chunk.js.map": "/gluteo/static/js/787.84842bf5.chunk.js.map"
+    "main.css": "/witam/static/css/main.f78ba5a7.css",
+    "main.js": "/witam/static/js/main.39644178.js",
+    "static/js/787.84842bf5.chunk.js": "/witam/static/js/787.84842bf5.chunk.js",
+    "static/media/glusio.png": "/witam/static/media/glusio.1a0194d27095fd4a8dc8.png",
+    "index.html": "/witam/index.html",
+    "main.f78ba5a7.css.map": "/witam/static/css/main.f78ba5a7.css.map",
+    "main.39644178.js.map": "/witam/static/js/main.39644178.js.map",
+    "787.84842bf5.chunk.js.map": "/witam/static/js/787.84842bf5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f78ba5a7.css",
-    "static/js/main.647f27e1.js"
+    "static/js/main.39644178.js"
   ]
 }
