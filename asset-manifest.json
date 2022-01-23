@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/witam/static/css/main.0dbd421f.css",
-    "main.js": "/witam/static/js/main.8e2578a4.js",
+    "main.js": "/witam/static/js/main.47f69ce9.js",
     "static/js/787.84842bf5.chunk.js": "/witam/static/js/787.84842bf5.chunk.js",
     "static/media/glusio.png": "/witam/static/media/glusio.1a0194d27095fd4a8dc8.png",
     "index.html": "/witam/index.html",
     "main.0dbd421f.css.map": "/witam/static/css/main.0dbd421f.css.map",
-    "main.8e2578a4.js.map": "/witam/static/js/main.8e2578a4.js.map",
+    "main.47f69ce9.js.map": "/witam/static/js/main.47f69ce9.js.map",
     "787.84842bf5.chunk.js.map": "/witam/static/js/787.84842bf5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0dbd421f.css",
-    "static/js/main.8e2578a4.js"
+    "static/js/main.47f69ce9.js"
   ]
 }
