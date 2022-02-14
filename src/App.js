@@ -186,7 +186,7 @@ function App() {
       case 'intro':
         return (
           <>
-            <div>Cieszę się, że dorzuciłeś się do mojej skarbonki!</div>
+            <div>Hej, zapraszam na spacerek!</div>
             <img src={glusio} alt="Gluten"></img>
             <div>Włącz dźwięk, po chwili pod każdym filmikiem zobaczysz przyciski.</div>
             <div>Wybieraj, co robimy dalej!</div>
